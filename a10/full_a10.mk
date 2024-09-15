@@ -10,6 +10,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/a10/device.mk)
 
+# Inherit some common EuclidOS stuff.
+$(call inherit-product, vendor/euclid/config/common_full_phone.mk)
+
+EUCLID_MAINTAINER := Masood
+EUCLID_GAPPS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
+TARGET_SUPPORTS_TOUCHGESTURES := true
+
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # Device identifier. This must come after all inclusions
