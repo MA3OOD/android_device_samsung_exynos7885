@@ -13,8 +13,6 @@ $(call inherit-product, device/samsung/a10/device.mk)
 # Inherit some common rom stuff
 $(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
-BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-
 # Rom Specific Flags
 MIKU_GAPPS := false
 MIKU_MASTER := Masood
