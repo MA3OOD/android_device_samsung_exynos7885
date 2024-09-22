@@ -10,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/a20/device.mk)
 
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # Device identifier. This must come after all inclusions
