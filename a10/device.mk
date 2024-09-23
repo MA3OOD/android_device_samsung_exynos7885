@@ -6,6 +6,7 @@ $(call inherit-product, vendor/samsung/a10/a10-vendor.mk)
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service_32
 # Platform
-PRODUCT_BOARD_PLATFORM := exynos7884
+BOARD_USES_QCOM_HARDWARE := false
+PRODUCT_BOARD_PLATFORM := exynos7885
 
 include device/samsung/a10/common.mk
