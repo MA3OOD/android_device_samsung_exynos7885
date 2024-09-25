@@ -344,7 +344,6 @@ PRODUCT_PACKAGES += \
 
 # Samsung Ext Flash
 PRODUCT_PACKAGES += \
-    FlashControl \
     SmartCharge
 
 PRODUCT_PACKAGES += \
