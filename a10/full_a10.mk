@@ -10,9 +10,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/a10/device.mk)
 
-# Inherit some common derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := a10
 PRODUCT_NAME := full_a10
