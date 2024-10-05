@@ -1,4 +1,7 @@
 TARGET_LOCAL_ARCH := arm64
+# Platform
+TARGET_BOARD_PLATFORM := exynos7884b
+TARGET_SOC := exynos7884b
 
 $(call inherit-product, vendor/samsung/a10/a10-vendor.mk)
 
