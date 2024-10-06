@@ -6,82 +6,59 @@ soong_namespace {
     ],
 }
 
-prebuilt_etc {
+
+install_symlink {
     name: "libOpenCL_symlink32",
-    src: "egl/libGLES_mali.so",
-    sub_dir: "lib",
-    filename: "libOpenCL.so",
-    installable: true,
-    relative_install_path: "lib",
     vendor: true,
+    installed_location: "lib/libOpenCL.so",
+    symlink_target: "egl/libGLES_mali.so",
 }
 
-prebuilt_etc {
+install_symlink {
     name: "libOpenCL_symlink64",
-    src: "egl/libGLES_mali.so",
-    sub_dir: "lib64",
-    filename: "libOpenCL.so",
-    installable: true,
-    relative_install_path: "lib64",
     vendor: true,
+    installed_location: "lib64/libOpenCL.so",
+    symlink_target: "egl/libGLES_mali.so",
 }
 
-prebuilt_etc {
+install_symlink {
     name: "libOpenCL.1_symlink32",
-    src: "egl/libGLES_mali.so",
-    sub_dir: "lib",
-    filename: "libOpenCL.so.1",
-    installable: true,
-    relative_install_path: "lib",
     vendor: true,
+    installed_location: "lib/libOpenCL.so.1",
+    symlink_target: "egl/libGLES_mali.so",
 }
 
-prebuilt_etc {
+install_symlink {
     name: "libOpenCL.1_symlink64",
-    src: "egl/libGLES_mali.so",
-    sub_dir: "lib64",
-    filename: "libOpenCL.so.1",
-    installable: true,
-    relative_install_path: "lib64",
     vendor: true,
+    installed_location: "lib64/libOpenCL.so.1",
+    symlink_target: "egl/libGLES_mali.so",
 }
 
-prebuilt_etc {
+install_symlink {
     name: "libOpenCL.1.1_symlink32",
-    src: "egl/libGLES_mali.so",
-    sub_dir: "lib",
-    filename: "libOpenCL.so.1.1",
-    installable: true,
-    relative_install_path: "lib",
     vendor: true,
+    installed_location: "lib/libOpenCL.so.1.1",
+    symlink_target: "egl/libGLES_mali.so",
 }
 
-prebuilt_etc {
+install_symlink {
     name: "libOpenCL.1.1_symlink64",
-    src: "egl/libGLES_mali.so",
-    sub_dir: "lib64",
-    filename: "libOpenCL.so.1.1",
-    installable: true,
-    relative_install_path: "lib64",
     vendor: true,
+    installed_location: "lib64/libOpenCL.so.1.1",
+    symlink_target: "egl/libGLES_mali.so",
 }
 
-prebuilt_etc {
+install_symlink {
     name: "vulkan_mali_symlink32",
-    src: "egl/libGLES_mali.so",
-    sub_dir: "lib/hw",
-    filename: "vulkan.mali.so",
-    installable: true,
-    relative_install_path: "lib/hw",
     vendor: true,
+    installed_location: "lib/hw/vulkan.mali.so",
+    symlink_target: "../egl/libGLES_mali.so",
 }
 
-prebuilt_etc {
+install_symlink {
     name: "vulkan_mali_symlink64",
-    src: "egl/libGLES_mali.so",
-    sub_dir: "lib64/hw",
-    filename: "vulkan.mali.so",
-    installable: true,
-    relative_install_path: "lib64/hw",
     vendor: true,
+    installed_location: "lib64/hw/vulkan.mali.so",
+    symlink_target: "../egl/libGLES_mali.so",
 }
